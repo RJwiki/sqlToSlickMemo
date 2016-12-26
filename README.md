@@ -28,19 +28,18 @@ SELECT * FROM tbA
 Slick:
 ```scala
 Query(tbA)
-.result
 ```
 
 -----------------------
 
 SQL:
 ```sql
-SELECT id, name FROM tbA
+SELECT id, name FROM tbA where age > 10
 ```
 
 Slick:
 ```scala
 Query(tbA)
+.filter(_.age > 10)
 .map{ case tbA => (tbA.id, tbA.name) }
-.result
 ```
