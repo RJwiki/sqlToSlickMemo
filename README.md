@@ -18,6 +18,7 @@
 | email         | String        | test@test.te |
 | address       | String        | Test Address |
 
+## Basic Select Statements:
 
 SQL:
 ```sql
