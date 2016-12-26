@@ -7,6 +7,19 @@ SELECT * FROM AAA
 
 Slick:
 ```scala
-Tables.AAA
+Query(AAA)
+.result
+```
+
+-----------------------
+
+SQL:
+```sql
+SELECT * FROM AAA
+```
+
+Slick:
+```scala
+Query(AAA)
 .result
 ```
