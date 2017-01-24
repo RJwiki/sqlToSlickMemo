@@ -43,3 +43,33 @@ Query(tbA)
 .filter(_.age > 10)
 .map{ case tbA => (tbA.id, tbA.name) }
 ```
+
+
+-------------------
+SQL: 
+INSERT XXXX VALUES YYYY INTO tbA
+
+Slick:
+tbA+= tbARow(
+XXXX = YYYY
+)
+
+-------------------
+SQL:
+DELETE FROM tbA WHERE id = XXX
+
+Slick:
+tbA
+.filter(_.id === XXX)
+.delete
+
+-------------------
+SQL:
+UPDATE tbA SET name = XXX, age = YYY
+where id = ZZZ
+
+Slick:
+
+
+
+-------------------
