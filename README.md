@@ -47,29 +47,39 @@ Query(tbA)
 
 -------------------
 SQL: 
+```sql
 INSERT XXXX VALUES YYYY INTO tbA
+```
 
 Slick:
+```scala
 tbA+= tbARow(
 XXXX = YYYY
 )
+```
 
 -------------------
 SQL:
+```sql
 DELETE FROM tbA WHERE id = XXX
-
+```
 Slick:
+```scala
 tbA
 .filter(_.id === XXX)
 .delete
+```
 
 -------------------
 SQL:
+```sql
 UPDATE tbA SET name = XXX, age = YYY
 where id = ZZZ
+```
 
 Slick:
-
-
+```scala
+TO DO
+```
 
 -------------------
