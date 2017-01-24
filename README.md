@@ -79,7 +79,14 @@ where id = ZZZ
 
 Slick:
 ```scala
-TO DO
+tbA
+.filter(_.expenseId === expenseId.bind)
+.map(e => (
+e.name, e.age
+))
+.update((
+ XXX, YYY
+))
 ```
 
 -------------------
